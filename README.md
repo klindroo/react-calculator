@@ -2,6 +2,8 @@
 
 A simple calculator built with React and Redux
 
+[Demo](http://calculator.kristianlindroos.com)
+
 ## Develop
 
 ```
@@ -17,3 +19,4 @@ npm run build
 ```
 
 This will build and minify css and javascript to the dist/ folder
+
