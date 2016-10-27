@@ -1,0 +1,36 @@
+{
+  "name": "react-calculator",
+  "version": "0.0.1",
+  "description": "A simple calculator app built with react",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "php -S 0.0.0.0:8023 & watchify . -d -o js/bundle.js -v",
+    "build-css": "cleancss -o dist/css/app.min.css css/app.css",
+    "prebuild": "cp imgs/* dist/imgs/",
+    "build": "browserify . | uglifyjs -c drop_console -m > dist/js/bundle.min.js"
+  },
+  "author": "Kristian Lindroos",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "clean-css": "^3.4.20",
+    "uglify-js": "^2.7.4",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
