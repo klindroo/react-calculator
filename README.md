@@ -1,6 +1,6 @@
 # React Calculator
 
-A simple calculator built with React
+A simple calculator built with React and Redux
 
 ## Develop
 
@@ -15,3 +15,5 @@ Then open browser http://localhost:8023
 ```
 npm run build
 ```
+
+This will build and minify css and javascript to the dist/ folder
